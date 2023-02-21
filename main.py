@@ -44,8 +44,8 @@ class Auto:
     def verificarIntegridad(self):
         x = True 
         reg = self.motor.registro
-        for x in self.asientos:
-            if x != None and reg != x.registro:
+        for y in self.asientos:
+            if y != None and reg != y.registro:
                 x= False
                 break
         if x and self.registro == reg:
