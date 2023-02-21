@@ -45,7 +45,7 @@ class Auto:
         x = True 
         reg = self.motor.registro
         for x in self.asientos:
-            if x != None and reg == x.registro:
+            if x != None and reg != x.registro:
                 x= False
                 break
         if x and self.registro == reg:
